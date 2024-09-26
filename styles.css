@@ -1,0 +1,83 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-rows: 60px 100px auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    grid-row: 2;
+    grid-column: 1 / span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    background-color: rgb(255, 120, 143);
+    padding: 5px;
+    grid-row: 1;
+    grid-column: 1 / span 4;
+}
+nav ul {
+    list-style-type: none;
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: right;
+    justify-content: space-around;
+}
+article {
+    background-color: rgb(0, 174, 255);
+    padding-left: 15px;
+    grid-row: 3;
+    grid-column: 1 / span 1;
+}
+article ul {
+    list-style-type: none;
+}
+section {
+    background-color: white;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-row: 3;
+    grid-column: 2 / span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 40px;
+}
+aside {
+    padding-left: 15px;
+}
+.hotelansichtLinks{
+    background-color: rgb(0, 174, 255);
+    padding-bottom: 15px;
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
+.hotelansichtRechts{
+    background-color: rgb(255, 255, 255);
+    padding-right: 15px;
+    padding-bottom: 15px;
+    grid-row: 3;
+    grid-column: 3 / span 2;
+}
+.hotelPicture {
+    width: 95%;
+}
+.back {
+    margin-top: 15px;
+    justify-content: left;
+}
+#Buchen {
+    grid-column: 1 / span 4;
+}
+div {
+    background-color: rgb(253, 107, 131);
+    width: 80%;
+    height: 250px;
+}
